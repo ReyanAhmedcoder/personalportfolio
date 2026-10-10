@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10110f" />
+  <title>Reyan Ahmed — 3D Creative Developer</title>
+  <meta name="description" content="Reyan Ahmed — CSE (AI & ML) developer portfolio with interactive 3D animation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div id="loader">
+    <div class="loader-ring"></div>
+    <div class="loader-text">REYAN<span>.DEV</span></div>
+    <div class="loader-line"><i></i></div>
+  </div>
+
+  <canvas id="webgl"></canvas>
+  <div class="noise"></div>
+  <div class="cursor-glow"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home"><span>RA</span><b>REYAN</b><small>AI • WEB • 3D</small></a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode"><span aria-hidden="true">☼</span></button>
+      <a class="nav-cta" href="mailto:reyanahmed058@gmail.com?subject=Portfolio%20Contact">Let's talk ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> SECOND-YEAR CSE (AI & ML) DEVELOPER</p>
+        <h1>Building <em>digital</em><br><strong>experiences</strong><br>that move.</h1>
+        <p class="hero-desc">I'm Reyan Ahmed, a CSE student who likes turning curious ideas into thoughtful websites, useful tools and playful interactive experiences.</p>
+        <div class="hero-actions">
+          <a class="magnetic primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="magnetic ghost" href="mailto:reyanahmed058@gmail.com?subject=Hello%20Reyan">Email me</a>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/ReyanAhmedcoder" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/reyan-ahmed-22aa90341/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="https://house-of-hk.vercel.app" target="_blank" rel="noreferrer">House of HK ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <div class="photo-halo"></div>
+        <div class="photo-card tilt-card">
+          <img src="reyan-photo.jpeg" alt="Reyan Ahmed" />
+          <div class="photo-overlay"></div>
+          <div class="photo-label"><span>01</span><b>REYAN AHMED</b><small>DEVELOPER · BUILDER · STUDENT</small></div>
+        </div>
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="floating-chip chip-one">AI / ML</div>
+        <div class="floating-chip chip-two">FULL STACK</div>
+        <div class="floating-chip chip-three">3D WEB</div>
+      </div>
+      <div class="scroll-cue"><span>SCROLL</span><i></i></div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-kicker">01 — A LITTLE ABOUT ME</div>
+      <div class="about-grid">
+          <div class="big-statement reveal">I like making the internet feel a little more <span>alive.</span></div>
+        <div class="about-text reveal">
+          <p>I'm Reyan Ahmed, a B.Tech CSE (AI & ML) student at the Institute of Engineering & Management, Salt Lake. I spend my time learning how software works and then finding interesting ways to put that knowledge to use.</p>
+          <p>My projects move between frontend development, AI experiments and interactive web experiences. I care about the details: a page should feel good to use, work on every screen and have a reason for every animation.</p>
+          <p>Outside the code, I'm usually collecting ideas for the next thing to build and learning by shipping small projects.</p>
+          <div class="stats">
+            <div><strong>AI</strong><span>Machine Learning</span></div>
+            <div><strong>WEB</strong><span>Frontend & UI</span></div>
+            <div><strong>3D</strong><span>Creative Web</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+        <div class="section-kicker">02 — SKILLS IN PROGRESS</div>
+        <h2 class="section-title reveal">My current <span>toolkit.</span></h2>
+        <div class="skills-grid">
+          <article class="skill-group reveal"><span class="skill-index">01 / BUILD</span><h3>Web development</h3><p>Responsive interfaces, practical web apps and the details that make them feel polished.</p><div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Streamlit</span><span>Vercel</span></div></article>
+          <article class="skill-group reveal"><span class="skill-index">02 / THINK</span><h3>Programming & AI</h3><p>Learning the fundamentals and exploring how intelligent tools can solve useful problems.</p><div class="skill-tags"><span>Python</span><span>Java</span><span>AI / ML</span><span>SQL</span><span>MATLAB</span></div></article>
+          <article class="skill-group reveal"><span class="skill-index">03 / SHIP</span><h3>Workflow & design</h3><p>Taking an idea from a rough sketch to a working, shareable experience.</p><div class="skill-tags"><span>Git</span><span>GitHub</span><span>Responsive UI</span><span>Motion</span></div></article>
+        </div>
+    </section>
+
+    <section class="section process" aria-labelledby="process-title">
+      <div class="section-kicker">03 — THE WAY I WORK</div>
+      <div class="process-heading">
+        <h2 id="process-title" class="section-title reveal">Scroll through<br>the <span>making of.</span></h2>
+        <p class="reveal">A good project is a series of small, thoughtful decisions. Here's the rhythm I bring to each one.</p>
+      </div>
+      <div class="process-steps">
+        <article class="process-step reveal"><span>01</span><div class="depth-word">NOTICE</div><h3>Start with a question</h3><p>Find the useful, fun or frustrating thing worth making better.</p></article>
+        <article class="process-step reveal"><span>02</span><div class="depth-word">MAKE</div><h3>Build a real first version</h3><p>Shape the idea into something people can try, use and respond to.</p></article>
+        <article class="process-step reveal"><span>03</span><div class="depth-word">REFINE</div><h3>Give it the good details</h3><p>Make the interactions clearer, the layout stronger and the experience smoother.</p></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="section-kicker">04 — PROJECTS & EXPERIMENTS</div>
+      <div class="project-head">
+        <h2 class="section-title reveal">Built with <span>curiosity.</span></h2>
+        <p class="reveal">Live builds and source code, side by side. Each project is a little different from the last.</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project reveal"><div class="project-num">01</div><div class="project-main"><p>WEB EXPERIENCE · E-COMMERCE</p><h3>House of HK</h3><span>A product-first storefront built for a fashion label.</span></div><div class="project-links"><a href="https://house-of-hk.vercel.app" target="_blank" rel="noreferrer">Live site ↗</a><a href="https://github.com/ReyanAhmedcoder/HOUSEOFHK" target="_blank" rel="noreferrer">Source ↗</a></div></article>
+        <article class="project reveal"><div class="project-num">02</div><div class="project-main"><p>WEB EXPERIENCE · RESTAURANT</p><h3>Saffron & Smoke</h3><span>A restaurant menu and ordering experience.</span></div><div class="project-links"><a href="https://saffron-and-smoke-alpha.vercel.app" target="_blank" rel="noreferrer">Live site ↗</a><a href="https://github.com/ReyanAhmedcoder/SAFFRON-AND-SMOKE" target="_blank" rel="noreferrer">Source ↗</a></div></article>
+        <article class="project reveal"><div class="project-num">03</div><div class="project-main"><p>AI · WEB APP</p><h3>Jarvis</h3><span>An AI-themed assistant project and web experience.</span></div><div class="project-links"><a href="https://jarvis-psi-mauve.vercel.app" target="_blank" rel="noreferrer">Live site ↗</a><a href="https://github.com/ReyanAhmedcoder/jarvis" target="_blank" rel="noreferrer">Source ↗</a></div></article>
+        <article class="project reveal"><div class="project-num">04</div><div class="project-main"><p>CREATIVE WEB · INTERACTIVE</p><h3>FaceMaker</h3><span>A playful browser-based face-making experiment.</span></div><div class="project-links"><a href="https://facemaker-seven.vercel.app" target="_blank" rel="noreferrer">Live site ↗</a><a href="https://github.com/ReyanAhmedcoder/facemaker" target="_blank" rel="noreferrer">Source ↗</a></div></article>
+        <article class="project reveal"><div class="project-num">05</div><div class="project-main"><p>GAME · ADVENTURE</p><h3>Dino Quest</h3><span>A side-scrolling dinosaur adventure inspired by classic platform games.</span></div><div class="project-links"><a href="https://dino-quest-five.vercel.app" target="_blank" rel="noreferrer">Play ↗</a><a href="https://github.com/ReyanAhmedcoder/DINO-QUEST" target="_blank" rel="noreferrer">Source ↗</a></div></article>
+        <article class="project reveal"><div class="project-num">06</div><div class="project-main"><p>GAME · HORROR</p><h3>Emberwatch</h3><span>A horror game experiment with an atmospheric, interactive world.</span></div><div class="project-links"><a href="https://emberwatch-rho.vercel.app" target="_blank" rel="noreferrer">Play ↗</a><a href="https://github.com/ReyanAhmedcoder/EMBERWATCH" target="_blank" rel="noreferrer">Source ↗</a></div></article>
+      </div>
+    </section>
+
+    <section class="section statement">
+      <div class="giant-word" data-text="CREATE">CREATE</div>
+      <p class="statement-copy">Ideas are cheap.<br><span>Make them move.</span></p>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-kicker">05 — CONTACT</div>
+      <h2 class="contact-title reveal">Have an idea?<br><span>Let's build it.</span></h2>
+      <a class="contact-email reveal" href="mailto:reyanahmed058@gmail.com?subject=Project%20Idea">reyanahmed058@gmail.com ↗</a>
+      <div class="contact-links reveal">
+        <a href="https://github.com/ReyanAhmedcoder" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/reyan-ahmed-22aa90341/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://house-of-hk.vercel.app" target="_blank" rel="noreferrer">Vercel</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 REYAN AHMED</span>
+    <span>CSE (AI & ML) · IEM SALT LAKE</span>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
