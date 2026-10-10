@@ -19,6 +19,6 @@ The site uses Three.js and Google Fonts from public CDNs, so keep an internet co
 - Email: reyanahmed058@gmail.com
 - GitHub: https://github.com/ReyanAhmedcoder
 - LinkedIn: https://www.linkedin.com/in/reyan-ahmed-22aa90341/
-- House of HK: https://house-of-hk.vercel.app
+- House of HK: https://houseofhk-64yi.vercel.app/
 
 The Projects section includes selected public Vercel deployments and their matching GitHub source repositories.
